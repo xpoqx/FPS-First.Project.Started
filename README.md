@@ -2,3 +2,18 @@
 xpoqx's Project
 
 ![xpoqx's github stats](https://github-readme-stats.vercel.app/api?username=xpoqx&show_icons=true)
+
+
+
+#### 개발 가능 언어
+- C
+- C#
+- Java
+- Python
+
+
+#### 관심 분야
+- Game
+- Web
+
+
