@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<style type="text/css">
+		body {
+			width: 1055px;
+			height: 1450px;
+			background-image: url('CSO3.png');
+			background-color: #3a3a3a;
+			text-align: center;
+			font-family: 'Nanum Gothic';
+			font-size:18px;
+			font-weight:bold;
+			color:white;
+			text-shadow:0px 0px 20px black,0px 0px 20px black,
+			0px 0px 20px black;
+		}
+		article {
+			float:left;
+			width: 63%;
+			height: 45%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		aside.as1 {
+			float:left;
+			width:35%;
+			height: 28%;
+			margin-left:1%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		aside table {
+			width: 99%;
+			height: 95%;
+		}
+		aside.as2 {
+			float:left;
+			width:35%;
+			height: 16.3%;
+			margin-left:1%;
+			margin-top: 1%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		footer {
+			float:left;
+			width:99%;
+			height: 54%;
+			margin-top: 1% ;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+	</style>
+	
+	<title></title>
+</head>
+<body>
+	<article><br>
+
+		<span style="white-space:nowrap; font-size: 33px;">
+			박진감 넘치는 이 시대 FPS 대표작,<br>
+			 카운터 스트라이크</span><br><br>
+			<p style="text-align: center;">
+			카운터 스트라이크(이하 카스)는 <br>
+			20년 전 FPS 장르 게임을 전세계로 널리 알린<br>
+			그리고 지금까지도 오랫동안 사랑받는 유일무이한 게임입니다.<br><br>
+			
+			20년 동안 수많은 시리즈가 출시 되었지만 <br>
+			그 중에서도 가장 추천할 만한 버전은 카스 온라인으로 <br>
+			현재 유일하게 한국 공식 운영중인 시리즈입니다. <br><br>
+
+			넥슨 계정만 있으면 무료로 플레이가 가능해서 <br>
+			다른 시리즈들에 비해 금전적인 부담도 없습니다.<br><br>
+
+			카스 시리즈에는 테러리스트, 대테러리스트 진영으로 나뉘어 <br>
+			폭탄을 설치하거나 설치를 막고 해체하는 <br>
+			오리지널 모드가 대표적인데 <br>
+			넥슨의 카스 온라인에는 좀비모드나, 숨바꼭질, FUN모드 등 <br>
+			색다른 느낌의 플레이 경험도 느낄 수 있어 <br>
+			성별을 불문하고 누구나 쉽게 즐길 수 있도록 만든 게임이라고 할 수 있습니다.<br><br>
+			부담스럽지 않은 플레이타임과 낮은 진입장벽, 지금 바로 카스 한 판 어떠신가요? 
+		</p>
+
+	</article>
+
+	<aside class="as1">
+		<table>
+		<tbody>
+			<tr>
+				<td>
+					로고
+					<a href="http://csonline.nexon.com/Main/Index" target="_blank"><img style="border: 3px solid black;" src='CSlogo.png'></a>
+					<p style="font-size: 12px;">(클릭 시 카스 온라인 홈페이지로 이동)</p>
+				</td>
+			</tr>
+			<tr>
+				<td>제작사
+					<img style="border: 3px solid black;" src='FPSlogo.png'>
+				</td>
+			</tr>
+			<tr>
+				<td>플랫폼<br>
+					PC, XBOX
+				</td>
+			</tr>
+		</tbody>
+</table>
+	</aside>
+	<aside class="as2">
+
+				플레이 화면 <br>
+	<img src="Play/FPS1.jpg" id=mainImage alt="No images found!" style="width: 95%; height: 85%;">
+	<script>
+
+	var myImage=document.getElementById('mainImage');
+	var imageArray=["Play/FPS1.jpg","Play/FPS2.jpg","Play/FPS3.jpg"];
+	var imageIndex=1;
+
+	function changeImage(){
+		myImage.setAttribute("src",imageArray[imageIndex]);
+		imageIndex++;
+		if(imageIndex>=imageArray.length){
+			imageIndex=0;
+		}
+	}
+	setInterval(changeImage,2000);
+	</script>
+	</aside>
+
+	<footer>
+		<h2>조작법</h2>
+		<img src="How/CSOplay.png">
+	</footer>
+
+</body>
+</html>

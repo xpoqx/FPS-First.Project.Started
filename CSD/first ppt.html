@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>Team ATE</title>
+ </head>
+ <body onkeydown='on_key_down()'>
+  <header>
+
+      <a href="#two"><img id="one" src="ppt1.JPG" alt="No Image Found!"></a>
+      <a href="#three"><img id="two" src="ppt2.JPG" alt="No Image Found!"></a>
+      <a href="#four"><img id="three" src="ppt3.JPG" alt="No Image Found!"></a>
+      <a href="#five"><img id="four" src="ppt4.JPG" alt="No Image Found!"></a>
+      <a href="#six"><img id="five" src="ppt5.JPG" alt="No Image Found!"></a>
+      <a href="#seven"><img id="six" src="ppt6.JPG" alt="No Image Found!"></a>
+      <a href="#eight"><img id="seven" src="ppt7.JPG" alt="No Image Found!"></a>
+      <a href="#nine"><img id="eight" src="ppt8.JPG" alt="No Image Found!"></a>
+      <img id="nine" src="ppt9.JPG" alt="No Image Found!">
+  </header>
+
+ </body>
+<script>
+  function on_key_down() {
+    var keycode = event.keyCode;
+    switch (keycode){
+      case 97:
+      location.href="#one";
+      break;
+      case 98:
+      location.href="#two";
+      break;
+      case 99:
+      location.href="#three";
+      break;
+      case 100:
+      location.href="#four";
+      break;
+      case 101:
+      location.href="#five";
+      break;
+      case 102:
+      location.href="#six";
+      break;
+      case 103:
+      location.href="#seven";
+      break;
+      case 104:
+      location.href="#eight";
+      break;
+      case 105:
+      location.href="#nine";
+      break;
+    }
+    
+}
+</script>
+ </html>

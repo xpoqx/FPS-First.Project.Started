@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<style type="text/css">
+		body {
+			width: 1055px;
+			height: 1450px;
+			background-image: url('LOL3.png');
+			background-color: #3a3a3a;
+			text-align: center;
+			font-family: 'Nanum Gothic';
+			font-size:18px;
+			font-weight:bold;
+			color:white;
+			text-shadow:0px 0px 20px black,0px 0px 20px black,
+			0px 0px 20px black;
+		}
+		article {
+			float:left;
+			width: 63%;
+			height: 45%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		aside.as1 {
+			float:left;
+			width:35%;
+			height: 28%;
+			margin-left:1%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		aside table {
+			width: 99%;
+			height: 95%;
+		}
+		aside.as2 {
+			float:left;
+			width:35%;
+			height: 16.3%;
+			margin-left:1%;
+			margin-top: 1%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		footer {
+			float:left;
+			width:99%;
+			height: 54%;
+			margin-top: 1% ;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+	</style>
+	
+	<title></title>
+</head>
+<body>
+	<article><br>
+
+		<span style="white-space:nowrap; font-size: 33px;">
+			레전드의 향연, MOBA 장르의 선두주자<br>
+			리그 오브 레전드 <br> </span> <br>
+			League of Legend, 속칭 LoL은<br>
+			이전 여타 MOBA 장르 게임들보다 낮은 진입장벽으로 높은 열풍을 일으켜<br>
+			현재도 전세계적으로 엄청난 인기를 끌고 있습니다. <br><br>
+			LoL은 소환사의 협곡에서 끝없이 이어지는 5:5 실시간 전투와 협동, <br>
+			팀플레이와 즉각적인 전략 플레이를 <br>
+			하나의 게임에서 동시에 즐길 수 있는 새로운 장르의 온라인 게임입니다.<br><br>
+			10명의 플레이어가 개성있고 독특한 플레이스타일을 자랑하는 영웅을 소환하여<br>
+			다양한 전장에서 정면 대결을 펼칩니다.<br><br>
+			신규 캐릭터가 끊임없이 추가되고<br>
+			지속적인 업데이트가 이루어지고 있으며<br>
+			흥미진진한 E스포츠 대회의 중심이기도 합니다.<br><br>
+
+			또다른 플레이 모드인 'TFT'는 2019년 6월에 새롭게 출시한 모드입니다.<br>
+			소환사의 협곡과는 다른 환상적인 전장에서 <br>
+			최후의 생존자가 되기 위해 일곱 명의 다른 플레이어들과 난투전을 벌입니다. <br>
+			전장의 휘젓는 영웅이 되어보고 싶으신가요? <br>
+			혹은 군을 이끄는 전략가가 되어보고 싶으신가요? <br>
+			그렇다면 League of Legend를 통해 그 기분을 마음껏 누려보세요.
+		 
+		</p>
+
+	</article>
+
+	<aside class="as1">
+		<table>
+		<tbody>
+			<tr>
+				<td>
+					로고<br>
+					<a href="https://www.leagueoflegends.co.kr/ko" target="_blank"><img style="border: 3px solid black;" src='LOLlogo.png'></a>
+					<p style="font-size: 12px;">(클릭 시 리그오브레전드 홈페이지로 이동)</p>
+				</td>
+			</tr>
+			<tr>
+				<td>제작사<br>
+					<img style="border: 3px solid black;" src='MOBAlogo.jfif'>
+				</td>
+			</tr>
+			<tr>
+				<td>플랫폼<br>
+					PC (Windows,Mac OS)
+				</td>
+			</tr>
+		</tbody>
+</table>
+	</aside>
+	<aside class="as2">
+
+				플레이 화면 <br>
+	<img src="Play/MOBA1.png" id=mainImage alt="No images found!" style="width: 95%; height: 85%;">
+	<script>
+
+	var myImage=document.getElementById('mainImage');
+	var imageArray=["Play/MOBA1.png","Play/MOBA2.jpg","Play/MOBA3.jpg"];
+	var imageIndex=1;
+
+	function changeImage(){
+		myImage.setAttribute("src",imageArray[imageIndex]);
+		imageIndex++;
+		if(imageIndex>=imageArray.length){
+			imageIndex=0;
+		}
+	}
+	setInterval(changeImage,2000);
+	</script>
+	</aside>
+
+	<footer>
+		<h2>조작법</h2>
+		<img style="width: 1030px; height: 693px;" src="How/LOLplay.png">
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<a href=""><img width="1916" height= id="Title4.png" src="Title4.png" alt="No Image Found!"></a>
+	<style type="text/css">
+	head {
+		padding: 0;
+		margin: 0;
+		border:none;
+	}
+				body {
+					width: 1920px;
+					background-color: #002060;
+					text-align: center;
+					margin: 0px;
+					font-family: "맑은 고딕",'Malgun Gothic';
+				}
+				header {
+				/*	padding-top:80px;
+					padding-bottom:30px;
+					*/
+				}
+				nav {
+						display: inline-block;
+				}
+				section iframe {
+					display: inline-block;
+					text-align:center;
+					border:3px solid #444444;
+				}
+
+ 				#Tab {
+ 					padding-left: 40px;
+ 					padding-top: 0px;
+ 					padding-bottom: 6px;
+                        height: 40px;
+                        width: 1130px;
+                        text-align: center;
+                }
+                #Tab ul {
+                	display: inline;
+                }
+
+                #Tab ul li {
+                        list-style: none;
+                        background-color: #ffffff;
+                        float: left;
+                        line-height: 40px;
+                        transition: background-color 0.3s;
+                }
+                #Tab ul li a {
+                	color:black;
+                }
+
+                #Tab .TabBar {
+                        text-decoration:none;
+                        display: block;
+                        width: 152.2px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        border-left:3px solid black;
+                        border-top:3px solid black;
+                        border-bottom:3px solid black;
+                }
+                #Tab .TabBar2 {
+                        text-decoration:none;
+                        display: block;
+                        width: 152.2px;
+                        
+                        font-weight: bold;
+                        border:3px solid black;
+                }                
+               
+                footer {
+                	color: white;
+                	font-size: 12px;
+                }
+     	           @keyframes bomb {
+				  from { font-size : 18px;}
+				  to { font-size : 18px;}
+				  from {color:#00ccff;}
+				  to{color: #114400;}
+				}
+					@keyframes navi {
+				  from {background-color:#222222;}
+				  to{background-color:#cc00cc;}
+				}
+				#Tab ul li:hover {
+					background-color:#00cc00;
+
+                }
+				#Tab .TabBar2 {
+					animation-name : bomb;
+					animation-direction: alternate-reverse;
+					animation-duration : 0.3s;
+					animation-iteration-count : infinite;
+				}
+				canvas {
+					display: block;
+				}	
+	</style>
+	<title>
+		FIG by Team ATE
+	</title>
+
+</head>
+<body>
+	<script type="text/javascript">
+window.onload = function(){
+	//can캔버스 생성
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	
+	//캔버스 정의
+	var W = window.innerWidth;
+	var H = window.innerHeight;
+	canvas.width = W;
+	canvas.height = H;
+	canvas.style.position="absolute";
+	
+	//객체
+	var mp = 25; //최대치
+	var particles = [];
+	for(var i = 0; i < mp; i++)
+	{
+		particles.push({
+			x: Math.random()*W, //X좌표
+			y: Math.random()*H, //Y좌표
+			r: Math.random()*10+1, //반지름
+			d: Math.random()*mp //개수
+		})
+	}
+	
+	//객체 그리기
+	function draw()
+	{
+		ctx.clearRect(0, 0, W, H);
+		
+		ctx.strokeStyle = "rgba(255, 255, 255, 1)";
+		ctx.beginPath();
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			ctx.moveTo(p.x+p.r, p.y);
+			ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
+		}
+		ctx.stroke();
+		update();
+	}
+	
+	//객체 이동 함수
+	var angle = 0;
+	function update()
+	{
+		angle += 0.2;
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			//좌표 업데이트
+			p.y += Math.cos(angle+p.d) - 1 - p.r/5;
+			p.x += Math.sin(angle) * 2;
+			
+			if(p.x > W-5 || p.x < 5 || p.y < 5 || p.y > H-5)
+			{
+					
+				//화면 탈출시 새로 생성
+				particles[i] = {x: Math.random()*W, y: Math.random()*H, r: p.r, d: p.d};
+
+			}
+		}
+	}
+	function pop() 
+	{
+
+	}
+	
+	//animation loop
+	setInterval(draw, 15);
+}
+</script>
+<canvas id="canvas"></canvas>
+	<header class="header">
+	
+	</header>
+
+	<nav id="Tab" style="position: relative; z-index: 1;">
+		<ul>
+			<li><a class="TabBar" href="Intro.html" target="frwin">소개</a></li>
+			
+			<li><a class="TabBar" href="FPS.html" target="frwin">FPS</a></li>
+			
+			<li><a class="TabBar" href="MOBA.html" target="frwin">MOBA</a></li>
+			
+			<li><a class="TabBar" href="RPG.html" target="frwin">RPG</a></li>
+		
+			<li><a class="TabBar" href="SIMULATION.html" target="frwin">SIMULATION</a></li>
+
+			<li><a class="TabBar" href="SPORTS.html" target="frwin">SPORTS</a></li>
+
+			<li><a class="TabBar2" href="FAQ.html" target="frwin">FAQ</a></li>
+
+
+		</ul>
+	</nav>
+
+	<section id="screen" style="position: relative; z-index: 1;">
+		<iframe name="frwin" width="1080" height="759" src="Intro.html"></iframe>
+	</section>
+	<hr>
+	<footer>
+	<p>
+	팀 이름 : ATE 
+	팀장 : XPO
+	</p>
+	<a href="first ppt.html">제안서 PPT 페이지로 이동하기</a>
+	</footer>
+</body>
+</html>

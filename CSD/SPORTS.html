@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<style type="text/css">
+		body {
+			width: 1055px;
+			height: 850px;
+			background-image: url('FIFA3.png');
+			background-color: #3a3a3a;
+			text-align: center;
+			font-family: 'Nanum Gothic';
+			font-size:18px;
+			font-weight:bold;
+			color:white;
+			text-shadow:0px 0px 20px black,0px 0px 20px black,
+			0px 0px 20px black;
+		}
+		article {
+			float:left;
+			width: 63%;
+			height: 79.3%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		aside.as1 {
+			float:left;
+			width:35%;
+			height: 52%;
+			margin-left:1%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		aside table {
+			width: 99%;
+			height: 95%;
+		}
+		aside.as2 {
+			float:left;
+			width:35%;
+			height: 26%;
+			margin-left:1%;
+			margin-top: 1%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		footer {
+			float:left;
+			width:99%;
+			height:48.5%;
+			margin-top: 1% ;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+	</style>
+	
+	<title></title>
+</head>
+<body>
+	<article><br>
+
+		<span style="white-space:nowrap; font-size: 33px;">
+			축구를 사랑한다면 모두 모여라!<br> 피파 온라인</span><br><br>
+
+			피파 온라인은 게임으로 경험할 수 있는 최고의<br>
+			가상 축구 세계를 제공합니다. <br><br>
+
+			국제 축구 연맹 FIFA와 직접 라이센스를 체결하여 <br>
+			FIFA 공식 규칙, 선수들의 프로필과 세부 기량을 전부 반영합니다.<br><br>
+			무엇보다도, 정해진 팀으로 플레이하는 것이 아닌 <br>
+			자신이 원하는 선수를 팀에 기용할 수 있는 것이<br>
+			피파온라인의 큰 매력입니다.  <br><br>
+			슛, 패스 등 단순한 컨트롤 이외에 <br>
+			2대1 패스, 고급 페인팅 기술, 트래핑, <br>
+			다양한 골 세리머니까지 할 수 있습니다. <br><br>
+			개인기와 정교한 슛은 연습이 필요하겠지만 <br>
+			실력과 선수들의 스펙에 큰 차이가 나지 않는 이상<br>
+			부담없이 게임을 즐길 수 있을 것입니다.<br><br>
+			 더 이상 프로페셔널 축구 경기를 보기만 할 필요가 없습니다.<br>
+			피파온라인에서 직접 플레이하세요!
+
+		</p>
+
+	</article>
+
+	<aside class="as1">
+
+		정보
+		<table>
+		<tbody>
+			<tr>
+				<td>
+					로고<br>
+					<a href="http://fifaonline4.nexon.com/main/index" target="_blank"><img style="border: 3px solid black;" src='FIFAlogo.png'></a>
+					<p style="font-size: 12px;">(클릭 시 피파 온라인 홈페이지로 이동)</p>
+				</td>
+			</tr>
+			<tr>
+				<td>제작사<br>
+					<img style="border: 3px solid black;" src='SPORTSlogo.png'>
+				</td>
+			</tr>
+			<tr>
+				<td>플랫폼<br>
+					PC, XBOX
+				</td>
+			</tr>
+		</tbody>
+</table>
+	</aside>
+	<aside class="as2">
+
+				플레이 화면 <br>
+	<img src="Play/SPORTS1.jpg" id=mainImage alt="No images found!" style="width: 95%; height: 85%;">
+	<script>
+
+	var myImage=document.getElementById('mainImage');
+	var imageArray=["Play/SPORTS1.jpg","Play/SPORTS2.jpg","Play/SPORTS3.jpg"];
+	var imageIndex=1;
+
+	function changeImage(){
+		myImage.setAttribute("src",imageArray[imageIndex]);
+		imageIndex++;
+		if(imageIndex>=imageArray.length){
+			imageIndex=0;
+		}
+	}
+	setInterval(changeImage,2000);
+	</script>
+	</aside>
+	<br>
+	<footer>
+		<h2>조작법</h2>
+		<img src="How/FIFAplay.jpg">
+	</footer>
+
+</body>
+</html>

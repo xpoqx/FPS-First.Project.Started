@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<style type="text/css">
+		body {
+			width: 1055px;
+			height: 1450px;
+			background-image: url('MAPLE3.png');
+			background-color: #3a3a3a;
+			text-align: center;
+			font-family: 'Nanum Gothic';
+			font-size:18px;
+			font-weight:bold;
+			color:white;
+			text-shadow:0px 0px 20px black,0px 0px 20px black,
+			0px 0px 20px black;
+		}
+		article {
+			float:left;
+			width: 63%;
+			height: 45%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		aside.as1 {
+			float:left;
+			width:35%;
+			height: 28%;
+			margin-left:1%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		aside table {
+			width: 99%;
+			height: 95%;
+		}
+		aside.as2 {
+			float:left;
+			width:35%;
+			height: 16.3%;
+			margin-left:1%;
+			margin-top: 1%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		footer {
+			float:left;
+			width:99%;
+			height: 54%;
+			margin-top: 1% ;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+	</style>
+	
+	<title></title>
+</head>
+<body>
+	<article><br>
+
+		<span style="white-space:nowrap; font-size: 33px;">
+			2D MMORPG의 거장<br>
+			 메이플스토리<br> </span><br><br>
+			2003년 4월 29일에 출시되어 <br>
+			전 세계 9개국 이상에서 서비스되고 있는 메이플스토리<br><br>
+
+			전사, 마법사, 궁수, 도적 등 취향에 따라<br>
+			수 많은 캐릭터를 즐길 수 있습니다. <br>
+			레벨이 오를수록 더욱 강력해지는 스킬들의 타격감을 즐겨보세요. <br><br>
+
+			무릉도원, 에델슈타인, 에레브, 시간의 신전 등 <br>
+			다양한 월드에서 여러 퀘스트를 달성해 보상을 받으며 성장할 수 있습니다.<br><br>
+			또한 비교적 낮은 사양의 컴퓨터로도 게임을 즐길 수 있습니다.<br>
+			메이플스토리의 후속 작 메이플스토리2도 같이 즐겨보세요!<br>
+			메이플스토리1에 비해 요구 사양이 높지만<br>
+			더욱 화려한 3D 그래픽을 느낄 수 있습니다.<br><br>
+
+			PC뿐만 아니라 모바일, 닌텐도 DS 시리즈용 게임, 만화책, <br>
+			장난감(카드,딱지) 등으로도 메이플스토리를 즐길 수 있습니다!
+ 
+		</p>
+
+	</article>
+
+	<aside class="as1">
+		<table>
+		<tbody>
+			<tr>
+				<td>
+					로고<br>
+					<a href="https://maplestory.nexon.com/Home/Main" target="_blank"><img style="border: 3px solid black; " src='MAPLElogo.png'></a>
+					<p style="font-size: 12px;">(클릭 시 메이플스토리 홈페이지로 이동)</p>
+				</td>
+			</tr>
+			<tr>
+				<td>제작사
+					<img style="border: 3px solid black;" src='RPGlogo.jpg'>
+				</td>
+			</tr>
+			<tr>
+				<td>플랫폼<br>
+					PC(Windows)
+				</td>
+			</tr>
+		</tbody>
+</table>
+	</aside>
+	<aside class="as2">
+
+				플레이 화면 <br>
+	<img src="Play/RPG1.jpg" id=mainImage alt="No images found!" style="width: 95%; height: 85%;">
+	<script>
+
+	var myImage=document.getElementById('mainImage');
+	var imageArray=["Play/RPG1.jpg","Play/RPG2.jpg","Play/RPG3.jpg"];
+	var imageIndex=1;
+
+	function changeImage(){
+		myImage.setAttribute("src",imageArray[imageIndex]);
+		imageIndex++;
+		if(imageIndex>=imageArray.length){
+			imageIndex=0;
+		}
+	}
+	setInterval(changeImage,2000);
+	</script>
+	</aside>
+
+	<footer>
+		<h2>조작법</h2>
+		<img src="How/MAPLEplay.png">
+	</footer>
+
+</body>
+</html>

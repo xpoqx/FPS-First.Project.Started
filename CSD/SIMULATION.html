@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<style type="text/css">
+		body {
+			width: 1055px;
+			height: 1061px;
+			background-image: url('SIMS3.png');
+			background-color: #3a3a3a;
+			text-align: center;
+			font-family: 'Nanum Gothic';
+			font-size:18px;
+			font-weight:bold;
+			color:white;
+			text-shadow:0px 0px 20px black,0px 0px 20px black,
+			0px 0px 20px black;
+		}
+		article {
+			float:left;
+			width: 63%;
+			height: 710.5px;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		aside.as1 {
+			float:left;
+			width:35%;
+			height:464px;
+			margin-left:1%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		aside table {
+			width: 99%;
+			height: 95%;
+		}
+		aside.as2 {
+			float:left;
+			width:35%;
+			height: 236.35px;
+			margin-left:1%;
+			margin-top: 1%;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+		footer {
+			float:left;
+			width:99%;
+			height: 340.75px;
+			margin-top: 1% ;
+			background-color: black;
+			background-color: rgba(0,0,0,0.5);
+		}
+	</style>
+	
+	<title></title>
+</head>
+<body>
+	<article><br>
+
+		<span style="white-space:nowrap; font-size: 33px;">
+			 우리는 모두가 신이 될 수 있다. <br>
+			'갓겜'의 선두주자 심즈! </span> <br><br>
+			심즈는 'GOD GAME' 말 그대로 신의 입장에서 심들의 삶을 직접 조종하고<br>
+			때로는 그들을 통해 플레이어 본인이 게임 속의 주체가 되어 생활합니다. <br><br>
+			2000년 2월 4일 처음 발매된 최초의 심즈 시리즈는<br>
+			심즈1을 시작으로 현시점에서 심즈4까지 발매가 되어 <br>
+			아직까지도 많은 이들의 사랑을 받는 중입니다. <br><br>
+
+			심즈의 가장 큰 매력은 내가 주인이 되어 그들의 삶을 관찰하고 <br>
+			그들의 행복,불행, 삶을 모두 내 손에서 직접 만들어 낸다는 점입니다.<br>
+			또한 모든 삶이 아름다울 수 없듯이 <br>
+			심즈에서도 탄생, 죽음과 같이 본질적인 축복과 불행의 양면성이 존재합니다.<br><br>
+			심즈 속 세계에서 캐릭터들은 인간의 기본적 욕구를 가지고 있으며 <br>
+			마치 현실과 같이 사랑하는 사람과 싫어하는 사람<br>
+			더 나아가서는 그 이상의 감정을 갖기도 합니다.<br>
+			이처럼 심들 사이의 관계는 <br>
+			우리들의 또다른 게임의 관전포인트가 되어 주기도 합니다.<br><br>
+			일반적인 게임과는 비교도 안되는 자유도와 <br>
+			자신이 원하는 무엇이든 할 수 있는 갓겜,<br>
+			직접 그들만의 '신'이 되어 심즈에서 즐겨보세요.
+ 
+
+ 
+		</p>
+
+	</article>
+
+	<aside class="as1">
+		<table>
+		<tbody>
+			<tr>
+				<td>
+					로고<br>
+					<a href="https://www.ea.com/ko-kr/games/the-sims" target="_blank"><img style="border: 3px solid black; " src='SIMSlogo.png'></a>
+					<p style="font-size: 12px;">(클릭 시 심즈 홈페이지로 이동)</p>
+				</td>
+			</tr>
+			<tr>
+				<td>제작사<br>
+					<img style="border: 3px solid black;" src='SIMULATIONlogo.png'>
+				</td>
+			</tr>
+			<tr>
+				<td>플랫폼<br>
+					PC(Windows,Mac OS)
+				</td>
+			</tr>
+		</tbody>
+</table>
+	</aside>
+	<aside class="as2">
+
+				플레이 화면 <br>
+	<img src="Play/SIM1.jpg" id=mainImage alt="No images found!" style="width: 95%; height: 85%;">
+	<script>
+
+	var myImage=document.getElementById('mainImage');
+	var imageArray=["Play/SIM1.jpg","Play/SIM2.jpg","Play/SIM3.jpg","Play/SIM4.jpg"];
+	var imageIndex=1;
+
+	function changeImage(){
+		myImage.setAttribute("src",imageArray[imageIndex]);
+		imageIndex++;
+		if(imageIndex>=imageArray.length){
+			imageIndex=0;
+		}
+	}
+	setInterval(changeImage,2000);
+	</script>
+	</aside>
+
+	<footer>
+		<h2>조작법</h2>
+		<img src="How/SIMSplay.png">
+	</footer>
+
+</body>
+</html>
