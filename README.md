@@ -32,7 +32,7 @@ xpoqx's Project
 
 #### 지난 프로젝트
 
-- 콘텐츠서비스개발 (HTML) 팀 프로젝트 : CSD 폴더 > index.html
+- 콘텐츠서비스개발 (HTML) 팀 프로젝트 : Clone CSD > Run index.html
 - 게임소프트웨어개발1 (Unity) 팀 프로젝트 : https://github.com/xpoqx/GSD_3LC_2
 - 게임소프트웨어개발2 (Unreal) 팀 프로젝트 : https://github.com/JungBin1225/RP-198
 - 콘텐츠기획및프리젠테이션 팀 프로젝트 
