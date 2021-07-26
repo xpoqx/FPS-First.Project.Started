@@ -10,6 +10,7 @@ xpoqx's Project
 - C#
 - Java
 - Python
+- HTML
 
 
 #### 관심 분야
